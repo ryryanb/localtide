@@ -1,0 +1,25 @@
+{
+  "name": "localtide",
+  "version": "1.0.0",
+  "description": "LocalTide is an innovative Node.js-powered web application designed to be the beating heart of your community. Seamlessly blending user-generated content, local news, and interactive features, LocalTide connects residents, digital nomads, and travelers to the pulse of your town.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryryanb/localtide.git"
+  },
+  "author": "Ryan Rey Bondoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryryanb/localtide/issues"
+  },
+  "homepage": "https://github.com/ryryanb/localtide#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1"
+  }
+}
