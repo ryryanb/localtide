@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
 });
 
 // Middleware to get a specific news article by ID
-async function getNews(req, res, next) {
+/*async function getNews(req, res, next) {
   try {
     const news = await News.findById(req.params.id);
     if (!news) {
@@ -42,4 +42,4 @@ async function getNews(req, res, next) {
   }
 }
 
-module.exports = router;
+module.exports = router;*/

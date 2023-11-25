@@ -1,7 +1,7 @@
 const express = require('express');
 //const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const newsRouter = require('./routes/news');
+//const newsRouter = require('./routes/news');
 const cors = require('cors');
 const axios = require('axios');
 require('dotenv').config(); // Load environment variables from a .env file
@@ -18,7 +18,7 @@ app.use(cors());
 //mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Routes
-app.use('/api/news', newsRouter);
+//app.use('/api/news', newsRouter);
 
 app.get('/api/currents', async (req, res) => {
   try {
