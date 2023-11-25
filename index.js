@@ -11,7 +11,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 // Use CORS middleware
-app.use(cors());
+// Enable CORS for a specific domain (replace 'your-github-pages-url' with your GitHub Pages URL)
+const corsOptions = {
+  origin: 'https://ryryanb.github.io/localtideFE/',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 
 // MongoDB Connection
 //mongoose.connect('mongodb://localhost:27017/localnews', { useNewUrlParser: true, useUnifiedTopology: true });
