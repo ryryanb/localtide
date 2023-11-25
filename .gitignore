@@ -1,6 +1,3 @@
-# Node.js
-node_modules/
-
 # Express
 dist/
 *.log
@@ -8,7 +5,6 @@ dist/
 # React
 build/
 dist/
-node_modules/
 
 # Environment variables
 .env

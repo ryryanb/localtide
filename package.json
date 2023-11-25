@@ -4,6 +4,7 @@
   "description": "LocalTide is an innovative Node.js-powered web application designed to be the beating heart of your community. Seamlessly blending user-generated content, local news, and interactive features, LocalTide connects residents, digital nomads, and travelers to the pulse of your town.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
