@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 // Use CORS middleware
 // Enable CORS for a specific domain (replace 'your-github-pages-url' with your GitHub Pages URL)
 const corsOptions = {
-  origin: 'https://ryryanb.github.io/localtideFE/',
+  origin: 'https://ryryanb.github.io',
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
