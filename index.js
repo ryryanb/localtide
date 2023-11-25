@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const newsRouter = require('./routes/news');
 const cors = require('cors');
@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/localnews', { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
+//mongoose.connect('mongodb://localhost:27017/localnews', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Routes
 app.use('/api/news', newsRouter);
