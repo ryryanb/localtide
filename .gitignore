@@ -1,12 +1,8 @@
 # Node.js
-
-# Express
-dist/
 *.log
 
 # React
 build/
-dist/
 
 # Environment variables
 .env
