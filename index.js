@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 //const newsRouter = require('./routes/news');
 const cors = require('cors');
 const axios = require('axios');
+const poiRoutes = require('./poiRoutes');
+
 require('dotenv').config(); // Load environment variables from a .env file
 
 const app = express();
@@ -13,11 +15,18 @@ app.use(bodyParser.json());
 // Use CORS middleware
 // Enable CORS for a specific domain (replace 'your-github-pages-url' with your GitHub Pages URL)
 const corsOptions = {
-  origin: 'https://ryryanb.github.io',
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: ['https://ryryanb.github.io', 'http://localhost:3001', 'http://localhost', 'https://localhost:3001', 'https://localhost'],
+  optionsSuccessStatus: 200,
 };
+app.use(cors());
+/*app.use(cors({
+  origin: 'http://localhost:3001',
+}));*/
 
-app.use(cors(corsOptions));
+app.use(poiRoutes);
+
+//app.use(cors(corsOptions));
+
 
 // MongoDB Connection
 //mongoose.connect('mongodb://localhost:27017/localnews', { useNewUrlParser: true, useUnifiedTopology: true });
